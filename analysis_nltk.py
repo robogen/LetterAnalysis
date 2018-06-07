@@ -3,8 +3,10 @@ from nltk.probability import FreqDist
 
 tokens = ""
 
-with open('constitution.txt', 'r') as con:
+with open(u'monte_cristo.txt', 'r', encoding="utf8") as con:
+    print("test")
     contents = con.read()
+    print("now")
     tokens = word_tokenize(contents)
 	
 processed = Text(tokens)
